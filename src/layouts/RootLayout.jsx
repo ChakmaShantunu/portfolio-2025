@@ -5,11 +5,11 @@ import Footer from '../pages/shared/Footer/Footer';
 
 const RootLayout = () => {
     return (
-        <div>
+        <div className='max-w-7xl mx-auto bg-base-200'>
             <nav>
                 <Navbar></Navbar>
             </nav>
-            <div>
+            <div className='min-h-[calc(100vh-8rem)]'>
                 <Outlet></Outlet>
             </div>
             <footer>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => {
     return (
-        <section className="relative border-l-2 border-gray-300 py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 max-w-5xl mx-auto">
+        <section className="relative border-l-2 border-gray-300 py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 max-w-5xl mx-auto" data-aos="fade-up-right">
 
             <div className="relative rounded-lg p-8 overflow-hidden">  {/* relative added here */}
 

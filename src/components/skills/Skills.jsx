@@ -12,7 +12,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <section className="max-w-5xl mx-auto px-6 py-16" id="skills">
+        <section className="max-w-5xl mx-auto px-6 py-16" id="skills" data-aos="fade-up-left">
             <h2 className="text-3xl font-semibold text-primary">Skills</h2>
             <div className='h-2 border border-gray-200 rounded w-18 bg-primary mb-12 mt-2'></div>
 
@@ -27,6 +27,8 @@ const Skills = () => {
                             <div
                                 className="bg-primary h-4 rounded"
                                 style={{ width: `${level}%` }}
+                                data-aos="slide-right"
+                                data-aos-delay="30"
                             ></div>
                         </div>
                     </div>

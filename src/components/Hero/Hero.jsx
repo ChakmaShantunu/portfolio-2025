@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <section className="bg-base-200">
-            <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <section className="bg-base-200 max-w-5xl mx-auto">
+            <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 
                 {/* Text Content */}
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">

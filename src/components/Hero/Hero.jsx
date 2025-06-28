@@ -53,7 +53,7 @@ const Hero = () => {
                     <img
                         src={heroImg}
                         alt="Hero"
-                        className="object-cover w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full shadow-lg border-4 border-white mb-48 md:mb-0"
+                        className="object-cover w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full shadow-lg border-4 border-white md:mb-0"
                     />
 
                 </div>

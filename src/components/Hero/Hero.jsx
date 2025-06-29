@@ -13,7 +13,7 @@ const Hero = () => {
                         Hi, I’m Shantunu.
                     </h1>
                     <h2 className="text-xl sm:text-2xl font-semibold text-base-content mt-4">
-                        A React Developer from Bangladesh
+                        A React Developer from Rangamati, Bangladesh
                     </h2>
                     <p className="mt-6 mb-8 text-lg sm:mb-12 text-secondary">
                         I build beautiful, performant websites and web apps.
@@ -25,7 +25,7 @@ const Hero = () => {
                     </div>
                     <div className="flex mt-6 gap-6 sm:justify-center lg:justify-start text-2xl">
                         <a
-                            href="https://www.linkedin.com/in/your-linkedin-username"
+                            href="https://www.linkedin.com/in/shantunu-chakma-b10a0b282/"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:text-primary transition-colors"
@@ -33,7 +33,7 @@ const Hero = () => {
                             <FaLinkedin />
                         </a>
                         <a
-                            href="https://github.com/your-github-username"
+                            href="https://github.com/ChakmaShantunu"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:text-primary transition-colors"

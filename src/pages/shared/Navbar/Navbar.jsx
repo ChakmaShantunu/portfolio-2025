@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router';
 import Logo from '../../../components/Logo/Logo';
 
 const Navbar = () => {
+
+    const [theme, setTheme] = useState('light');
+
+    const handleToggle = e => {
+        const isChecked = e.target.checked
+        const newTheme = isChecked ? 'dark' : 'light'
+        localStorage.setItem('theme', newTheme)
+        document.documentElement.setAttribute('data-theme', newTheme)
+        setTheme(isChecked);
+    }
+
+    useEffect(() => {
+        const saveTheme = localStorage.getItem('theme');
+        if (saveTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark')
+            setTheme(true)
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light')
+            setTheme(false)
+        }
+    }, [])
 
     const activeClass = ({ isActive }) => {
         isActive ? 'text-primary font-semibold' : 'text-base-content hover:text-primary'
@@ -35,7 +56,9 @@ const Navbar = () => {
                     {navLinks}
                 </ul>
             </div>
-            <div className="navbar-end">
+
+            <div className="navbar-end gap-4">
+                <input type="checkbox" className="toggle theme-controller" onChange={handleToggle} checked={theme} />
                 <button className='btn btn-primary'>Resume</button>
             </div>
         </div>

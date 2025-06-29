@@ -13,7 +13,7 @@ const ProjectCard = ({ title, description, features, techs, githubLinks, liveUrl
             <div className="flex flex-col lg:flex-row items-center gap-6 bg-base-100 border border-base-300 rounded-2xl p-6 shadow-md" data-aos="fade-up">
 
                 {/* Left: Image */}
-                <div className="flex-1 max-w-md overflow-y-auto w-96 h-96">
+                <div className="flex-1 max-w-full md:max-w-md h-auto md:h-96 overflow-hidden rounded-xl overflow-y-auto">
                     <img src={image} alt={title} className="rounded-xl w-full object-cover" />
                 </div>
 

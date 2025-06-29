@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
+
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = () => {
+        const email = 'chakmashantunu.web@gmail.com';
+        const subjectText = encodeURIComponent(subject);
+        const bodyText = encodeURIComponent(message);
+
+        // Gmail compose link
+        const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subjectText}&body=${bodyText}`;
+
+        window.open(gmailLink, '_blank');
+    };
     return (
         <section className="max-w-5xl mx-auto px-6 py-16" id="contact" data-aos="fade-up">
             <h2 className="text-3xl font-semibold text-primary mb-2">Contact Me</h2>
@@ -33,14 +47,18 @@ const Contact = () => {
                 <div className="flex-1 space-y-4">
                     <input
                         type="text"
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
                         placeholder="Enter subject/title"
                         className="input input-bordered w-full"
                     />
                     <textarea
                         className="textarea textarea-bordered w-full h-40"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         placeholder="Your message"
                     ></textarea>
-                    <button className="btn btn-primary">Send Email</button>
+                    <button onClick={handleSubmit} className="btn btn-primary">Send Email</button>
                 </div>
 
             </div>

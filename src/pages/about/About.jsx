@@ -1,36 +1,38 @@
-import React from 'react';
+import React from "react";
+import profileImg from '../../assets/images/profile3.jpg'
 
-const AboutMe = () => {
+const techs = [
+    "MongoDB", "JavaScript", "Node.js", "Express.js",
+    "React", "Tailwind CSS", "DaisyUI", "JWT", "Firebase"
+];
+
+const About = () => {
     return (
-        <section className="relative border-l-2 border-gray-300 py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 max-w-5xl mx-auto" data-aos="fade-up-right">
+        <div className="min-h-screen flex flex-col items-center justify-center px-4 py-10 bg-base-100 text-base-content" data-aos="fade-up">
+            {/* Profile Image */}
+            <img
+                src={profileImg} // Replace with your image URL
+                alt="Profile"
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary"
+            />
 
-            <div className="relative rounded-lg p-8 overflow-hidden">  {/* relative added here */}
+            {/* Title */}
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mt-6 mb-4 py-12 text-center">I’m a passionate React Developer from Bangladesh with a strong foundation in HTML, CSS, JavaScript, and modern frameworks like React and Tailwind CSS. Currently, I’m expanding my expertise in backend development using Node.js, Express.js, MongoDB, and Firebase.
+            </h1>
 
-                <h2 className="text-3xl font-semibold text-primary">About Me</h2>
-                <div className='h-2 border border-gray-200 rounded w-18 bg-primary mb-12 mt-2'></div>
-
-                <p className="text-base-content text-opacity-80 leading-relaxed text-lg">
-                    I have experience creating responsive and user-friendly interfaces using React, Tailwind CSS, and JavaScript. I'm comfortable working with both frontend and backend technologies, including Firebase, MongoDB, Node.js, Express.js, and REST APIs. I also use Git & GitHub for version control and team collaboration.
-                </p>
-
-                {/* Circle bubble */}
-                <div className='absolute rounded-full opacity-5 overflow-hidden bg-primary
-  w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48
-  -bottom-16 sm:-bottom-20 md:-bottom-24
-  -left-16 sm:-left-20 md:-left-24
-  rotate-12'></div>
-
-                <div className='absolute rounded-full opacity-5 overflow-hidden bg-primary
-  w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48
-  -top-16 sm:-top-20 md:-top-24
-  -right-16 sm:-right-20 md:-right-24
-  rotate-12'></div>
-
-
+            {/* Tech Stack */}
+            <div className="flex flex-wrap justify-center gap-3 max-w-2xl">
+                {techs.map((tech, index) => (
+                    <div
+                        key={index}
+                        className="bg-primary text-white px-4 py-2 rounded-xl shadow-md text-sm md:text-base"
+                    >
+                        {tech}
+                    </div>
+                ))}
             </div>
-
-        </section>
+        </div>
     );
 };
 
-export default AboutMe;
+export default About;

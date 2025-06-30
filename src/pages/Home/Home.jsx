@@ -1,10 +1,10 @@
 import React from 'react';
 import Hero from '../../components/Hero/Hero';
-import AboutMe from '../about/About';
 import Skills from '../../components/skills/Skills';
 import Education from '../../components/Education/Education';
 import Projects from '../../components/Projects/Projects';
 import Contact from '../../components/Contact/Contact';
+import AboutMe from '../../components/about/AboutMe';
 
 const Home = () => {
     return (

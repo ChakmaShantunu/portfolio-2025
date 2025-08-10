@@ -4,8 +4,26 @@ import ProjectCard from './ProjectCard';
 import projectImg1 from '../../assets/images/social events.png';
 import projectImg2 from '../../assets/images/freelance platform.png';
 import projectImg3 from '../../assets/images/bankPayment.png';
+import projectImg4 from '../../assets/images/Mern discussion platform.png';
 
 const projects = [
+    {
+        title: 'ForumSphere – MERN Discussion Platform',
+        description: 'A community-driven discussion platform where users can share posts, vote, comment, and engage in meaningful conversations with role-based access and membership system.',
+        features: [
+            'Upvote/Downvote system for posts',
+            'Commenting on posts',
+            'Role-based access control (Admin & User)',
+            'Membership system with Stripe payment integration',
+        ],
+        techs: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Firebase', 'Tailwind CSS', 'DaisyUI', 'Stripe'],
+        githubLinks: {
+            client: 'https://github.com/ChakmaShantunu/mern-discussion-platform-client.git',
+            server: 'https://github.com/ChakmaShantunu/mern-discussion-platform-server.git',
+        },
+        liveUrl: 'https://react-mern-discussion-platform.web.app/',
+        image: projectImg4,
+    },
     {
         title: 'SocialConnect – Social Event Platform',
         description: 'A platform to create, discover, and join social development events with community engagement.',
@@ -54,6 +72,8 @@ const projects = [
         liveUrl: 'https://merigold-auth.web.app/',
         image: projectImg3,
     },
+
+
 ];
 
 

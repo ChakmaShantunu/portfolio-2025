@@ -7,6 +7,10 @@ const Contact = () => {
     const [message, setMessage] = useState('');
 
     const handleSubmit = () => {
+        if (!subject.trim() || !message.trim()) {
+            alert('Please fill in both subject and message')
+            return;
+        }
         const email = 'chakmashantunu.web@gmail.com';
         const subjectText = encodeURIComponent(subject);
         const bodyText = encodeURIComponent(message);
@@ -14,7 +18,12 @@ const Contact = () => {
         // Gmail compose link
         const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subjectText}&body=${bodyText}`;
 
-        window.open(gmailLink, '_blank');
+        const gmailWindow = window.open(gmailLink, '_blank');
+        setTimeout(() => {
+            if (!gmailWindow || gmailWindow.closed) {
+                window.location.href = `mailto:${email}?subject=${subjectText}&body=${bodyText}`
+            }
+        }, 500)
     };
     return (
         <section className="max-w-5xl mx-auto px-6 py-16" id="contact" data-aos="fade-up">

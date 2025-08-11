@@ -21,9 +21,12 @@ const Hero = () => {
                         Let’s create something amazing together.
                     </p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <a href="https://drive.google.com/uc?export=download&id=1EgFBaQPGUmTgrc_uluHfC1blmFnzGr79" download="my-resume.pdf">
-                            <button className='btn btn-primary'>Download Resume</button>
+                        <a href="https://drive.google.com/uc?export=download&id=1NkXl9s1wQiPSCzwxZi_hMIi-1MF84T82" download="Shantunu-Chakma-Resume.pdf">
+                            <button className="btn btn-primary">
+                                Download Resume
+                            </button>
                         </a>
+
                     </div>
                     <div className="flex mt-6 gap-6 sm:justify-center lg:justify-start text-2xl">
                         <a

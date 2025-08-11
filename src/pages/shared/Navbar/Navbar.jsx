@@ -59,7 +59,7 @@ const Navbar = () => {
 
             <div className="navbar-end gap-4">
                 <input type="checkbox" className="toggle theme-controller" onChange={handleToggle} checked={theme} />
-                <a href="https://drive.google.com/file/d/1EgFBaQPGUmTgrc_uluHfC1blmFnzGr79/view?usp=drive_link">
+                <a href="https://drive.google.com/file/d/17-qhX8LB_bC3zcDGZgfyMsw5urBjjU32/view?usp=drive_link">
                     <button className='btn btn-primary'>Resume</button>
                 </a>
             </div>

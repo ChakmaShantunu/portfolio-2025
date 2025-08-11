@@ -1,6 +1,7 @@
 import React from 'react';
 import heroImg from '../../assets/images/profile3.jpg';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
     return (
@@ -10,10 +11,31 @@ const Hero = () => {
                 {/* Text Content */}
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                     <h1 className="text-3xl font-bold leading-none sm:text-6xl text-primary">
-                        Hi, I’m Shantunu.
+                        <Typewriter
+                            words={[
+                                "Hi, I’m Shantunu.",
+                            ]}
+                            loop={0} // 0 means infinite
+                            cursor
+                            cursorStyle="|"
+                            typeSpeed={60}
+                            deleteSpeed={50}
+                            delaySpeed={1500}
+                        />
                     </h1>
                     <h2 className="text-xl sm:text-2xl font-semibold text-base-content mt-4">
-                        A React Developer from Rangamati, Bangladesh
+                        <Typewriter
+                            words={[
+                                "A React Developer from Rangamati, Bangladesh",
+                            ]}
+                            loop={0} // 0 means infinite
+                            cursor
+                            cursorStyle="|"
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1500}
+                        />
+                        
                     </h2>
                     <p className="mt-6 mb-8 text-lg sm:mb-12 text-secondary">
                         I build beautiful, performant websites and web apps.

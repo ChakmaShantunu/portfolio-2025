@@ -1,5 +1,6 @@
 import React from 'react';
 import heroImg from '../../assets/images/profile3.jpg';
+import profileImg from '../../assets/images/My_pic.jpg';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -15,7 +16,7 @@ const Hero = () => {
                             words={[
                                 "Hi, I’m Shantunu.",
                             ]}
-                            loop={0} // 0 means infinite
+                            loop={2} 
                             cursor
                             cursorStyle="|"
                             typeSpeed={60}
@@ -26,12 +27,12 @@ const Hero = () => {
                     <h2 className="text-xl sm:text-2xl font-semibold text-base-content mt-4">
                         <Typewriter
                             words={[
-                                "A React Developer from Rangamati, Bangladesh",
+                                "A Frontend Developer from Rangamati, Bangladesh",
                             ]}
-                            loop={0} // 0 means infinite
+                            loop={2} 
                             cursor
                             cursorStyle="|"
-                            typeSpeed={70}
+                            typeSpeed={50}
                             deleteSpeed={50}
                             delaySpeed={1500}
                         />
@@ -78,8 +79,8 @@ const Hero = () => {
 
                     {/* Profile Image */}
                     <img
-                        src={heroImg}
-                        alt="Hero"
+                        src={profileImg}
+                        alt="myProfile"
                         className="object-cover w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full shadow-lg border-4 border-white md:mb-0"
                     />
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import heroImg from '../../assets/images/profile3.jpg';
-import profileImg from '../../assets/images/My_pic.jpg';
+import profileImg from '../../assets/images/profile.png';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -81,7 +80,7 @@ const Hero = () => {
                     <img
                         src={profileImg}
                         alt="myProfile"
-                        className="object-cover w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full shadow-lg border-4 border-white md:mb-0"
+                        className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full shadow-lg border-4 border-white md:mb-0"
                     />
 
                 </div>

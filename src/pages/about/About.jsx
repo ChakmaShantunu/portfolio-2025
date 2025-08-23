@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from '../../assets/images/profile3.jpg'
+import profileImg from '../../assets/images/profile.png'
 
 const techs = [
     "MongoDB", "JavaScript", "Node.js", "Express.js",
@@ -13,7 +13,7 @@ const About = () => {
             <img
                 src={profileImg} // Replace with your image URL
                 alt="Profile"
-                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary"
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-contain border-4 border-primary"
             />
 
             {/* Title */}

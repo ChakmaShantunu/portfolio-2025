@@ -15,7 +15,7 @@ const Hero = () => {
                             words={[
                                 "Hi, I’m Shantunu.",
                             ]}
-                            loop={2} 
+                            loop={2}
                             cursor
                             cursorStyle="|"
                             typeSpeed={60}
@@ -26,16 +26,16 @@ const Hero = () => {
                     <h2 className="text-xl sm:text-2xl font-semibold text-base-content mt-4">
                         <Typewriter
                             words={[
-                                "A Frontend Developer from Rangamati, Bangladesh",
+                                "A Full Stack Developer from Rangamati, Bangladesh",
                             ]}
-                            loop={2} 
+                            loop={2}
                             cursor
                             cursorStyle="|"
                             typeSpeed={50}
                             deleteSpeed={50}
                             delaySpeed={1500}
                         />
-                        
+
                     </h2>
                     <p className="mt-6 mb-8 text-lg sm:mb-12 text-secondary">
                         I build beautiful, performant websites and web apps.
@@ -43,11 +43,15 @@ const Hero = () => {
                         Let’s create something amazing together.
                     </p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <a href="https://drive.google.com/uc?export=download&id=1NkXl9s1wQiPSCzwxZi_hMIi-1MF84T82" download="Shantunu-Chakma-Resume.pdf">
+                        <a
+                            href="https://drive.google.com/uc?export=download&id=1bMPmYTOl-vxY0oZVFVezCkevgDLEjjc9"
+                            download="Shantunu-Chakma-Resume.pdf"
+                        >
                             <button className="btn btn-primary">
                                 Download Resume
                             </button>
                         </a>
+
 
                     </div>
                     <div className="flex mt-6 gap-6 sm:justify-center lg:justify-start text-2xl">

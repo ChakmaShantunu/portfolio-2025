@@ -8,6 +8,9 @@ const skills = [
     { name: 'Express.js', level: 50 },
     { name: 'MongoDB', level: 50 },
     { name: 'Firebase', level: 90 },
+    { name: 'Typescript', level: 60 },
+    { name: 'PostgreSQL', level: 70 },
+    { name: 'Prisma', level: 20 },
 ];
 
 const Skills = () => {

@@ -37,7 +37,7 @@ const Hero = () => {
                         />
 
                     </h2>
-                    <p className="mt-6 mb-8 text-lg sm:mb-12 text-secondary">
+                    <p className="mt-6 mb-8 text-lg sm:mb-12">
                         I build beautiful, performant websites and web apps.
                         <br className="hidden md:inline lg:hidden" />
                         Let’s create something amazing together.

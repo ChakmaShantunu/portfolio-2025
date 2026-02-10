@@ -10,7 +10,7 @@ const skills = [
     { name: 'Firebase', level: 90 },
     { name: 'Typescript', level: 60 },
     { name: 'PostgreSQL', level: 70 },
-    { name: 'Prisma', level: 20 },
+    { name: 'Prisma', level: 40 },
 ];
 
 const Skills = () => {

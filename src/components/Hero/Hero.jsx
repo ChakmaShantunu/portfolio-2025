@@ -26,7 +26,7 @@ const Hero = () => {
                     <h2 className="text-xl sm:text-2xl font-semibold text-base-content mt-4">
                         <Typewriter
                             words={[
-                                "A Full Stack Developer from Rangamati, Bangladesh",
+                                "A Backend Developer from Rangamati, Bangladesh",
                             ]}
                             loop={2}
                             cursor

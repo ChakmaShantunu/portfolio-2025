@@ -9,7 +9,7 @@ const AboutMe = () => {
                 <h2 className="text-3xl font-semibold text-primary">About Me</h2>
                 <div className='h-2 border border-gray-200 rounded w-18 bg-primary mb-12 mt-2'></div>
 
-                <p className="text-base-content text-opacity-80 leading-relaxed text-lg">
+                <p className="text-base-content text-opacity-80 leading-relaxed text-lg font-Inter">
                     I have experience creating responsive and user-friendly interfaces using React, Tailwind CSS, and JavaScript. I'm comfortable working with both frontend and backend technologies, including Firebase, MongoDB, Node.js, Express.js, and REST APIs. I also use Git & GitHub for version control and team collaboration. Currently, I’m enrolled in the Programming Hero Level 2 Web Development Bootcamp.
                 </p>
 

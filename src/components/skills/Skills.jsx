@@ -28,7 +28,7 @@ const Skills = () => {
                         </div>
                         <div className="w-full bg-base-300 rounded h-4">
                             <div
-                                className="bg-primary h-4 rounded"
+                                className="bg-primary h-4 rounded font-Inter"
                                 style={{ width: `${level}%` }}
                                 data-aos="slide-right"
                                 data-aos-delay="30"

@@ -59,10 +59,10 @@ const Contact = () => {
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
                         placeholder="Enter subject/title"
-                        className="input input-bordered w-full"
+                        className="input input-bordered w-full font-Inter"
                     />
                     <textarea
-                        className="textarea textarea-bordered w-full h-40"
+                        className="textarea textarea-bordered w-full h-40 font-Inter"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         placeholder="Your message"

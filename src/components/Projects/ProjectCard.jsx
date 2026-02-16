@@ -20,10 +20,10 @@ const ProjectCard = ({ title, description, features, techs, githubLinks, liveUrl
                 {/* Right: Info */}
                 <div className="flex-1 space-y-4 text-base-content">
                     <h3 className="text-2xl font-semibold text-primary">{title}</h3>
-                    <p className="text-base-content text-opacity-80">{description}</p>
+                    <p className="text-base-content text-opacity-80 font-Inter">{description}</p>
 
                     {/* Features */}
-                    <ul className="list-disc pl-5 text-sm space-y-1">
+                    <ul className="list-disc pl-5 text-sm space-y-1 font-Inter">
                         {features.map((feature, i) => (
                             <li key={i}>{feature}</li>
                         ))}

@@ -10,7 +10,7 @@ const Hero = () => {
 
                 {/* Text Content */}
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                    <h1 className="text-3xl font-bold leading-none sm:text-6xl text-primary">
+                    <h1 className="text-3xl font-bold leading-none sm:text-6xl text-primary font-Inter">
                         <Typewriter
                             words={[
                                 "Hi, I’m Shantunu.",
@@ -23,7 +23,7 @@ const Hero = () => {
                             delaySpeed={1500}
                         />
                     </h1>
-                    <h2 className="text-xl sm:text-2xl font-semibold text-base-content mt-4">
+                    <h2 className="text-xl sm:text-2xl font-semibold text-base-content mt-4 font-Inter">
                         <Typewriter
                             words={[
                                 "A Backend Developer from Rangamati, Bangladesh",
@@ -37,7 +37,7 @@ const Hero = () => {
                         />
 
                     </h2>
-                    <p className="mt-6 mb-8 text-lg sm:mb-12">
+                    <p className="mt-6 mb-8 text-lg sm:mb-12 font-Inter">
                         I build beautiful, performant websites and web apps.
                         <br className="hidden md:inline lg:hidden" />
                         Let’s create something amazing together.

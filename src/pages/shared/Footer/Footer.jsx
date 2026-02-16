@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
             </nav> */}
             <aside>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved by Shantunu Chakma Portfolio</p>
+                <p className='font-Inter'>Copyright © {new Date().getFullYear()} - All right reserved by Shantunu Chakma Portfolio</p>
             </aside>
         </footer>
     );

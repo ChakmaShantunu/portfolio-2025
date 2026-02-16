@@ -33,10 +33,10 @@ const Education = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-base-content">{edu.degree}</h3>
-                                    <p className="text-base-content text-opacity-80 text-sm">{edu.institution}</p>
+                                    <p className="text-base-content text-opacity-80 text-sm font-Inter">{edu.institution}</p>
                                 </div>
                             </div>
-                            <p className="text-sm text-base-content text-opacity-70">{edu.year}</p>
+                            <p className="text-sm text-base-content text-opacity-70 font-Inter">{edu.year}</p>
                         </div>
                     </div>
                 ))}
